@@ -1,0 +1,481 @@
+
+/* Desktop padrão (1200px - 1399px) */
+@media (max-width: 1399px) {
+    /* Hero */
+    .hero-content {
+        width: 90%;
+        max-width: 900px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero .logo {
+        max-width: 320px;
+        margin-top: 10rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 1.1rem 2.8rem;
+    }
+
+    /* Container e Navegação */
+    .container {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 3rem;
+    }
+
+    /* About */
+    .about-content {
+        gap: 4rem;
+    }
+
+    /* Serviços */
+    .services-grid {
+        gap: 2rem;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        gap: 1.8rem;
+    }
+}
+
+/* Desktop menor (992px - 1199px) */
+@media (max-width: 1199px) {
+    /* Hero */
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero .logo {
+        max-width: 300px;
+        margin-top: 9rem;
+    }
+
+    /* Navegação */
+    .nav-links {
+        gap: 2.5rem;
+    }
+
+    /* Serviços */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        gap: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        gap: 3rem;
+    }
+}
+
+/* Tablet grande (768px - 991px) */
+@media (max-width: 991px) {
+    /* Hero */
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero .logo {
+        max-width: 260px;
+        margin-top: 8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        padding: 0 20px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    /* Mantém animação de digitação */
+    .typing {
+        animation: typing 3.5s steps(40) 1s 1 normal both;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .typing::after {
+        right: -8px;
+    }
+
+    /* Navegação */
+    .nav-links {
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+
+    /* About */
+    .about-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .about-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    /* Serviços */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contato */
+    .cards-wrapper {
+        gap: 2rem;
+    }
+}
+
+/* Tablet (576px - 767px) */
+@media (max-width: 767px) {
+    /* Header e Navegação Mobile */
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1100;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    /* Menu Mobile */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(10, 25, 47, 0.98);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* Hero */
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero .logo {
+        max-width: 240px;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        max-width: 500px;
+    }
+
+    .hero-wrapper {
+        gap: 1.5rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 1rem 2.5rem;
+    }
+
+    /* About */
+    .about {
+        padding: 80px 0;
+    }
+
+    .about h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Serviços */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .portfolio-categories {
+        gap: 1rem;
+        padding: 0 10px;
+    }
+
+    /* Contato */
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .footer-brand {
+        align-items: center;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-to-top svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Mobile grande (481px - 575px) */
+@media (max-width: 575px) {
+    /* Hero */
+    .hero-content {
+        width: 95%;
+        max-width: 450px;
+    }
+
+    .hero .logo {
+        max-width: 220px;
+        margin-top: 6rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        padding: 0 15px;
+    }
+
+    .hero-wrapper {
+        gap: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.9rem 2.2rem;
+    }
+
+    /* About */
+    .about {
+        padding: 60px 0;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    /* Serviços */
+    .services h2,
+    .portfolio h2,
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-info-card,
+    .contact-form-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Mobile médio (381px - 480px) */
+@media (max-width: 480px) {
+    /* Hero */
+    .hero-content {
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .hero .logo {
+        max-width: 200px;
+        margin-top: 5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* About */
+    .about-text p {
+        font-size: 0.95rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* Portfolio */
+    .category-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Mobile pequeno (até 380px) */
+@media (max-width: 380px) {
+    /* Hero */
+    .hero-content {
+        width: 95%;
+        max-width: 340px;
+    }
+
+    .hero .logo {
+        max-width: 200px;
+        margin-top: 4.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1rem;
+        padding: 0 8px;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 0.8rem 2rem;
+    }
+
+    /* About */
+    .about h2,
+    .services h2,
+    .portfolio h2,
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Ajustes para orientação landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 60px 0;
+    }
+
+    .hero .logo {
+        max-width: 180px;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .mobile-menu {
+        padding: 2rem 0;
+        overflow-y: auto;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Ajustes para a animação de digitação */
+@media (min-width: 768px) {
+    .typing {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .typing {
+        white-space: normal;
+        width: 100%;
+        animation: fadeIn 1s ease-in;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+}
